@@ -24,7 +24,7 @@ const PropertyDropdown = () => {
         <RiHome5Line className="dropdown-icon-primary" />
         <div>
           <div className="text-[16px] font-medium leading-tight " >{property}</div>
-          <div className="text-[14px]" >Select a place</div>
+          <div className="text-[14px]" >Select property type</div>
           </div>
           {isOpen ? (
             <RiArrowUpSLine className="dropdown-icon-secondary" />
