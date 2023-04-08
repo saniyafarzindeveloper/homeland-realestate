@@ -48,7 +48,27 @@ const HouseContextProvider = ({children}) => {
   }, [])
 
   const handleClick = () =>{
-    console.log('clicked');
+    // console.log(country, property, price);
+
+    //create a function that includes (any)
+    const isDefault = (str) =>{
+      return str.split(' ').includes('(any)');
+    };
+
+    // console.log(isDefault(country));
+
+    //get 1st value & parse it to number
+    const minPrice =  parseInt(price.split(' ')[0])
+
+    //get 2nd value which is the max & parse it to number
+    const maxPrice = parseInt(price.split(' ')[2])
+    // console.log(maxPrice)
+
+    const newHouses = housesData.filter((house) =>{
+      const housePrice = parseInt(house.price)
+    });
+
+    return newHouses;
   }
 
   return (
